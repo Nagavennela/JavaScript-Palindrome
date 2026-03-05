@@ -1,0 +1,14 @@
+function checkPalindrome(){
+
+let value=document.getElementById("inputValue").value;
+
+let reversed=value.split("").reverse().join("");
+
+if(value===reversed){
+document.getElementById("result").innerText="It is a Palindrome";
+}
+else{
+document.getElementById("result").innerText="Not a Palindrome";
+}
+
+}
